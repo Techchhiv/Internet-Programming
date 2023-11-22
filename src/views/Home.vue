@@ -9,7 +9,7 @@
         </div>
         <Menu text="Popular Products"></Menu>
         <div class="prod-dis">
-            <Product v-for="item in ProItems" :bgColor="item.bgColor" :img="item.img" :text="item.text" :star1="item.star1" :star2="item.star2" :show="item.show" :dis="item.dis"></Product>
+            <Product v-for="item in ProItems" :bgColor="item.bgColor" :img="item.img" :text="item.text" :show="item.show" :dis="item.dis"></Product>
         </div>
     </div>
 </template>

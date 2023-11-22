@@ -28,6 +28,9 @@
 
 <script>
     import Count from './Count.vue';
+    import star1 from '../assets/img/001-star1.png'
+    import star2 from '../assets/img/001-star5.png'
+
     export default{
         components:{
             Count,
@@ -36,8 +39,6 @@
         props:{
             img: String,
             text:String,
-            star1: String,
-            star2: String,
             dis:String,
             show:String,
             bgColor: String,
@@ -51,10 +52,10 @@
                 let star= [];
                 for(let i=0;i<5;i++){
                     if(i<this.rate_pro){
-                        star.push(this.star1);
+                        star.push(star1);
                     }
                     else{
-                        star.push(this.star2);
+                        star.push(star2);
                     }
                 }
                 return star;
