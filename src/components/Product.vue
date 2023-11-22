@@ -21,7 +21,6 @@
         </div>
         <div class="prod-disp" :class="show" :style="{backgroundColor: bgColor}">
             <p>{{ dis }}</p>
-           
         </div>
     </div>
 </template>

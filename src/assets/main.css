@@ -338,7 +338,7 @@ body{
   width: fit-content;
   align-items: end;
   height: 100%;
-  gap: 2px;
+  justify-content: space-between;
 
   margin-left: 10px;
 }
