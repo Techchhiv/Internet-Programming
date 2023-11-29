@@ -1,5 +1,6 @@
 <template>
     <div class="container">
+        <SignUp></SignUp>
         <Menu text="Featured Categories"></Menu>
         <div class="cat-dis">
             <Categories v-for="cat in Category" :style="{backgroundColor: cat.bgColor}" :img="cat.img" :itemCount="cat.itemCount" :itemName="cat.ItemName"></Categories>
@@ -21,6 +22,7 @@
     import Categories from '../components/Category.vue'
     import Promotion from '../components/Promotion.vue'
     import Product from '../components/Product.vue'
+    import SignUp from '../components/SignUp.vue'
 
     export default{
         mixins: [Store],
@@ -29,6 +31,7 @@
             Categories,
             Promotion,
             Product,
+            SignUp,
         },
     }
 </script>

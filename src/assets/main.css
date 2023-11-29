@@ -2,8 +2,7 @@
 
 body{
   padding: 10px 20px;
-  display: flex;
-  justify-content: center;
+  
 }
 
 .container{
@@ -14,6 +13,98 @@ body{
   gap: 20px;
 }
 
+.routerlink{
+  text-decoration: none;
+}
+/* Sign Up Container */
+
+.signup-con{
+  width: 1550px;
+  height: 600px;
+  flex-shrink: 0;
+  background-color: #FEF2D8;
+  background-image: url('../assets/img/fresh-apples-shopping-mesh-bag-with-branch-apples-removebg 1.png');
+  background-position: right;
+  background-repeat: no-repeat;
+  background-size: contain;
+  display: flex;
+  align-items: start;
+  flex-direction: column;
+  justify-content: center;
+  padding: 0 0 0 80px;
+  margin: 10px 0;
+}
+
+.signup-con p:first-child{
+  width: 800px;
+  word-wrap: break-word;
+  color: var(--NestMart-TextHeading, #253D4E);
+
+  /* NestMart/Display 2 */
+  font-size: 72px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 78px; /* 108.333% */
+  letter-spacing: -0.029px;
+  margin-bottom: 30px;
+}
+
+.signup-con p{
+  color: var(--NestMart-TextBody, #7E7E7E);
+  font-size: 30px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 40px; /* 86.667% */
+  margin-bottom: 30px;
+}
+
+.signup-con .inputEmail{
+  display: flex;
+  width: 442px;
+  height: 50px;
+  flex-shrink: 0;
+  border-radius: 30px;
+  background: #FFF;
+  position: relative;
+  padding: 0 0 0 22px;
+}
+
+.signup-con .inputEmail input{
+  border: none;
+  outline: none;
+  flex-grow: 1;
+  border-radius: 30px;
+}
+.signup-con .inputEmail input::placeholder{
+  color: #B6B6B6;
+
+  /* NestMart/ Text xs */
+  font-size: 15px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 18px; /* 150% */
+}
+
+.signup-con .inputEmail button{
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  top: 0;
+  width: 149px;
+  height: 50px;
+  flex-shrink: 0;
+  border-radius: 30px;
+  background-color: #3BB77E;   
+  border: none;
+  color: #FFF;
+
+  /* NestMart/Heading 6 */
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 20px; /* 125% */
+  letter-spacing: -0.006px;
+}
 /* Menu Container */
 .menu-con{
   display: flex;
@@ -356,4 +447,190 @@ body{
 .count-arrow button:hover{
   background-color: #3BB77E;
   color: white;
+}
+
+/* Nav Container */
+
+.nav-container{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 1550px;
+  flex-shrink: 0;
+  margin: 30px 0;
+}
+
+.nav-container .icon-text{
+  display: flex;
+}
+
+.nav-container .icon-text .text p:first-child{
+  color: var(--NestMart-Brand-1, #3BB77E);
+  font-size: 40px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 50px; /* 125% */
+  letter-spacing: -0.016px;
+  margin-left: 5px;
+}
+
+.nav-container .icon-text .text p:last-child{
+  color: var(--NestMart-TextHeading, #253D4E);
+  font-size: 10.9px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 18.201px; /* 166.982% */
+  letter-spacing: 1.09px;
+  text-transform: uppercase;
+  margin-left: 5px;
+}
+
+.nav-container .search-con{
+  display: flex;
+  align-items: center;
+  width: 700px;
+  height: 50px;
+  flex-shrink: 0;
+  border-radius: 5px;
+  border: 2px solid #BCE3C9;
+  background: var(--NestMart-White, #FFF);
+  padding: 15px 20px;
+}
+
+.nav-container .search-con .droppable{
+  display: flex;
+  gap: 10px;
+}
+.nav-container .search-con .droppable p{
+  color: var(--NestMart-TextHeading, #253D4E);
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 20px; /* 142.857% */
+  letter-spacing: -0.006px;
+}
+
+.nav-container .search-con input{
+  border: none;
+  outline: none;
+  flex-grow: 1;
+  margin-left: 14px;
+  padding: 0 0 0 14px;
+  border-left: #CACACA 1px solid;
+}
+
+.nav-container .nav-icons{
+  display: flex;
+  gap: 20px;
+  color: var(--NestMart-TextBody, #7E7E7E);
+
+  /* NestMart/Text Medium */
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 24px; /* 150% */
+}
+
+.nav-container .nav-icons .icons{
+  display: flex;
+  align-items: center;
+  gap: 3px;
+}
+
+.nav-container .nav-icons p{
+  width: 60px;
+  text-align: center;
+}
+
+/* Browse Container */
+
+.browse-con{
+  width: 100%;
+  border-top: 1px solid #E5E5E5;
+  border-bottom: 1px solid #E5E5E5;
+  display: flex;
+  padding: 20px 0;
+  border-top: 1px solid #E5E5E5;
+  border-bottom: 1px solid #E5E5E5;
+  margin: 20px 0;
+}
+
+.browse-con .allbrowse{
+  width: 1545px;
+  display: flex;
+  justify-content: space-between;
+  flex-shrink: 0;
+}
+
+
+.browseCat-con{
+  display: flex;
+  width: 250px;
+  height: 44px;
+  flex-shrink: 0;
+  border-radius: 5px;
+  background: var(--NestMart-Brand-1, #3BB77E); 
+  align-items: center;
+  justify-content: space-evenly;
+  color: #FFF;
+
+  /* NestMart/Heading 6 */
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 20px; /* 125% */
+  letter-spacing: -0.006px;
+
+}
+.browse-con .allbrowse .browseNav{
+  display: flex;
+  gap: 30px;
+}
+
+.browse-con .allbrowse .browseNav .browseIcon{
+  display: flex;
+  align-items: center;
+  height: 100%;
+  gap: 8px;
+  min-width: 50px;
+}
+
+.browse-con .allbrowse .browseNav .browseIcon p{
+  color: #1B1B1B;
+  letter-spacing: -0.006px;
+
+  /* NestMart/Heading 6 */
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 20px; /* 125% */
+}
+
+.browse-con .allbrowse .browseNav .browseIcon .hot-deals{
+  margin-right: 20px;
+}
+
+.browse-con .contactService{
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.browse-con .contactService .contactNumber p:first-child{
+  color: var(--NestMart-Brand-1, #3BB77E);
+
+  /* NestMart/Heading 4 */
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 32px; /* 133.333% */
+  letter-spacing: -0.01px;
+}
+.browse-con .contactService .contactNumber p:last-child{
+  color: var(--NestMart-TextBody, #7E7E7E);
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 18px; /* 150% */
+  letter-spacing: 1.14px;
 }
