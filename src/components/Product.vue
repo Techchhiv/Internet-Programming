@@ -5,7 +5,9 @@
         </div>
         <div class="prod-text" >
             <p class="p1">Hodo Foods</p>
-            <p class="p2">{{ text }}</p>
+            <RouterLink class="routerlink" to="/products/:productId">
+                <p class="p2">{{ text }}</p>
+            </RouterLink>
             <div class="prod-star">
                 <img v-for="col in getStar()" :src="col" alt="">
                 <p class="p6">(4.0)</p>
@@ -29,11 +31,13 @@
     import Count from './Count.vue';
     import star1 from '../assets/img/001-star1.png'
     import star2 from '../assets/img/001-star5.png'
+import { RouterLink } from 'vue-router';
 
     export default{
         components:{
             Count,
-        },
+            RouterLink
+},
         
         props:{
             img: String,
