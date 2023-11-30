@@ -30,3 +30,4 @@ coverage
 firebase.json
 .firebase/hosting.ZGlzdA.cache
 .gitignore
+.vite
