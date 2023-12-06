@@ -96,7 +96,9 @@
                     </div>
                 </RouterLink>
                 <div class="browseIcon">
-                    <p>Home</p>
+                    <RouterLink to="/" class="routerlink">
+                        <p>Home</p>
+                    </RouterLink>
                 </div>
                 <div class="browseIcon">
                     <p>Food</p>

@@ -216,6 +216,10 @@ body{
   background-repeat: no-repeat;
 }
 
+.pro-con button{
+  cursor: pointer;
+}
+
 .pro-con p{
   word-wrap: break-word;
   width: 250px;
@@ -775,6 +779,8 @@ body{
   line-height: 48px; /* 120% */
   letter-spacing: -0.016px;
   margin-bottom: 28px;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 
 .productView-con .productInfo-con .info-con .stars{

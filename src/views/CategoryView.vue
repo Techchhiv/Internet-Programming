@@ -23,10 +23,5 @@
             this.categoryid = this.$route.params.categoriesId;
             this.category = this.Category.find( cat => cat.id === parseInt(this.categoryid));
         },
-
-
-        watch:{
-
-        }
     }
 </script>

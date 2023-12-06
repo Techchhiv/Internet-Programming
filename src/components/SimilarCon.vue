@@ -14,11 +14,5 @@
         props:{
             imgSrc: String,
         },
-        methods:{
-            toggleBorder(){
-                if(this.isSelected) this.isSelected = false;
-                else this.isSelected = true;
-            }
-        }
     }
 </script>
