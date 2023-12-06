@@ -1,13 +1,13 @@
 <template>
     <div class="productInfo-con">
         <div class="img-con">
-            <img src="../assets/img/18 1.png" alt="">
+            <img :src="imgSrc" alt="">
         </div>
         <div class="info-con">
             <div class="text">
                 In Stock
             </div>
-            <p class="title">Seeds of Change Organic Quinoa, Brown</p>
+            <p class="title">{{ title }}</p>
             <div class="stars">
                 <img v-for="s in ShowStar()" :src="s" alt="">
                 <p>({{ star.toFixed(1) }})</p>
@@ -86,6 +86,13 @@
             }
         },
         props:{
+            title:{
+                type: String,
+                default: " ",
+            },
+            imgSrc:{
+                type:String,
+            },
             star:{
                 type: Number,
                 default: 4.0,

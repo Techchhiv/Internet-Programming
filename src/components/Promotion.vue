@@ -1,8 +1,8 @@
 <template>
     <div class="pro-con">
         <p>{{ text }}</p>
-        <RouterLink to="/products/:productId">
-            <btn></btn>
+        <RouterLink to="/products/1">
+            <btn :style="{backgroundColor: bgButton}"></btn>
         </RouterLink>
     </div>
 </template>
