@@ -43,3 +43,7 @@ Route::get('/products/{productId}', function (Request $request) {
 Route::get('/products/{productId}', function (Request $request) {
     return "Delete 1 product";
 });
+Route::get('/categories/{categoryId}/products', function (Request $request) {
+    return "Get all products belong to categoryId";
+});
+
