@@ -21,26 +21,26 @@ Route::middleware('auth:sanctum')->get('/user', function (Request $request) {
 Route::get('/categories', function (Request $request) {
     return "Get all categories";
 });
-Route::get('/categories', function (Request $request) {
+Route::post('/categories', function (Request $request) {
     return "Create 1 categories";
 });
-Route::get('/categories/{categoryId}', function (Request $request) {
+Route::patch('/categories/{categoryId}', function (Request $request) {
     return "Update 1 categories";
 });
-Route::get('/categories/{categoryId}', function (Request $request) {
+Route::delete('/categories/{categoryId}', function (Request $request) {
     return "Delete 1 categories";
 });
 
 Route::get('/products', function (Request $request) {
     return "Get all products";
 });
-Route::get('/products', function (Request $request) {
+Route::post('/products', function (Request $request) {
     return "Create 1 product";
 });
-Route::get('/products/{productId}', function (Request $request) {
+Route::patch('/products/{productId}', function (Request $request) {
     return "Update 1 product";
 });
-Route::get('/products/{productId}', function (Request $request) {
+Route::delete('/products/{productId}', function (Request $request) {
     return "Delete 1 product";
 });
 Route::get('/categories/{categoryId}/products', function (Request $request) {
