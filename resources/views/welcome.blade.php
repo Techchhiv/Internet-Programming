@@ -12,10 +12,6 @@
             Powered by Larevel v.10 <br>
             Version 0.1
         </h5>
-
-        <button type="button"><a href="./categories">Show all Product</a></button>
-        
-        
     </div>
 </body>
 </html>
