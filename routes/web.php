@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\AuthController;
 use App\Http\Controllers\CategoryController;
 use App\Http\Controllers\ProductController;
 use Illuminate\Support\Facades\Route;
@@ -34,3 +35,5 @@ Route::get('/products', [ProductController::class,'createProduct']);
 Route::get('/products/{product}', [ProductController::class,'getProduct']);
 Route::get('/products/{product}/edit', [ProductController::class,'updateProduct']);
 Route::get('/products/{product}/delete', [ProductController::class,'deleteProduct']);
+
+Route::get('/verify_otp',[AuthController::class, "verifyOTP"]);

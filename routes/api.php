@@ -1,8 +1,11 @@
 <?php
 
+use App\Http\Controllers\AuthController;
 use App\Http\Controllers\CategoryController;
 use App\Http\Controllers\ProductController;
+use App\Mail\TestMail;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Mail;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -48,3 +51,17 @@ Route::middleware('auth:sanctum')->get('/user', function (Request $request) {
 // Route::get('/categories/{categoryId}/products', function (Request $request) {
 //     return "Get all products belong to categoryId";
 // });
+
+
+Route::post('/register',[AuthController::class, "register"]);
+Route::post('/login',[AuthController::class, "login"]);
+
+Route::get('/send-test-email', function () {
+    $user = [
+        'name' => 'John Doe',
+        'email' => 'john.doe@example.com',
+    ];
+    Mail::to($user['email'])->send(new TestMail($user));
+
+    return "Test email sent!";
+});
