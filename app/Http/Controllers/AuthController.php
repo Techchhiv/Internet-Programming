@@ -47,7 +47,7 @@ class AuthController extends Controller
 
                 $token = $user->createToken('API_Token')->accessToken;
     
-                return response($token);
+                return response(['message'=>"Login successfully",'token'=>$token]);
             }else{
                 // Return Forbidden Error back to user in case the password is incorrect.
                 return response(['error'=>"Forbidden Error"],400);
