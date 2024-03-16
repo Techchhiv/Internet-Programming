@@ -1,0 +1,112 @@
+{
+    "openapi": "3.0.0",
+    "info": {
+        "title": "L5 OpenApi",
+        "description": "L5 Swagger OpenApi description",
+        "version": "1.0.0"
+    },
+    "paths": {
+        "/categories": {
+            "get": {
+                "description": "Get all categories",
+                "operationId": "ccdda622fc3a681727dc266235461959",
+                "responses": {
+                    "default": {
+                        "description": ""
+                    }
+                }
+            },
+            "post": {
+                "description": "Create new categories",
+                "operationId": "05fd56ad9657a714136c71ee2be9bae7",
+                "responses": {
+                    "default": {
+                        "description": ""
+                    }
+                }
+            }
+        },
+        "/categories/{categoryId}": {
+            "get": {
+                "description": "Get category by ID",
+                "operationId": "5c9dbd580ad8268043721b34769e9668",
+                "responses": {
+                    "default": {
+                        "description": ""
+                    }
+                }
+            },
+            "delete": {
+                "description": "Delete category by ID",
+                "operationId": "f54abd0bfe431e451975d25948281523",
+                "responses": {
+                    "default": {
+                        "description": ""
+                    }
+                }
+            },
+            "patch": {
+                "description": "Update category by ID",
+                "operationId": "0bbd72dfe7df012a740c4df065bfe85d",
+                "responses": {
+                    "default": {
+                        "description": ""
+                    }
+                }
+            }
+        },
+        "/products": {
+            "get": {
+                "description": "Get all products",
+                "operationId": "f28b090a8b129b0ca53e57089bab61a5",
+                "responses": {
+                    "default": {
+                        "description": ""
+                    }
+                }
+            },
+            "post": {
+                "description": "Create a product",
+                "operationId": "f425b83e5de0cea82c8e391e28a15886",
+                "responses": {
+                    "default": {
+                        "description": ""
+                    }
+                }
+            }
+        },
+        "/products/{product}": {
+            "get": {
+                "description": "Get one product",
+                "operationId": "147a4643c72e4f38a8e83c30cad6a1e3",
+                "responses": {
+                    "default": {
+                        "description": ""
+                    }
+                }
+            }
+        },
+        "/products/{product}/edit": {
+            "patch": {
+                "description": "Update Product",
+                "operationId": "18d6e3faff6ce2c66854a46a8954d659",
+                "responses": {
+                    "default": {
+                        "description": ""
+                    }
+                }
+            }
+        },
+        "/products/{product}/delete": {
+            "delete": {
+                "description": "Delete Product",
+                "operationId": "498f8caa604e0b0926ded5d85cc7ae09",
+                "responses": {
+                    "default": {
+                        "description": ""
+                    }
+                }
+            }
+        }
+    }
+}
